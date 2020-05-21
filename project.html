@@ -31,10 +31,10 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav w-100 align-items-md-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="feeds.html">Публикации</a>
+                    <a class="nav-link active" href="feeds.html">Публикации</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Люди</a>
+                    <a class="nav-link" href="index.html">Люди</a>
                 </li>
 
                 <li class="nav-item ml-md-auto">
@@ -55,9 +55,9 @@
                         </div>
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="myprojects.html">Мои проекты</a>
-                        <a class="dropdown-item" href="settings.html">Настройки</a>
-                        <a class="dropdown-item" href="logout">Выход</a>
+                        <a class="dropdown-item" href="#">Мои проекты</a>
+                        <a class="dropdown-item" href="#">Настройки</a>
+                        <a class="dropdown-item" href="#">Выход</a>
                     </div>
                 </li>
             </ul>
@@ -67,56 +67,40 @@
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row mt-4">
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <form action="" class="search-form">
                         <input type="text" placeholder="Поиск">
                         <button class="search-btn"><img src="data/img/search.svg" alt=""></button>
                     </form>
 
-                    <ul class="w-list">
-                        <li class="w-list-item">
-                            <a href="freelancer.html">
-                                <div class="d-flex">
-                                    <div class="mr-3">
-                                        <img src="data/img/sample.jpg" alt="">
-                                    </div>
-                                    <div class="user-info">
-                                        <h6>Sardor Allaberganov</h6>
-                                        <p>Designer</p>
-                                        <p>
-                                            Сомнение ментально заполняет сенсибельный смысл жизни. Гегельянство, как следует из вышесказанного, выводит позитивизм. Позитивизм,
-                                            конечно, амбивалентно представляет собой
-                                        </p>
-                                        <div class="tags">
-                                            <button onclick="location.href='#'">Figma</button>
-                                            <button onclick="location.href='#'">Adobe photoshop</button>
-                                        </div>
-                                    </div>
+                    <div class="freelancer">
+                        <div class="top d-flex justify-content-between">
+                            <div class="user-info d-flex">
+                                <div>
+                                    <h6>Sardor Allaberganov</h6>
+                                    <p>UI/UX Designer</p>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="w-list-item">
-                            <a href="freelancer.html">
-                                <div class="d-flex">
-                                    <div class="mr-3">
-                                        <img src="data/img/no-image.webp" alt="">
-                                    </div>
-                                    <div class="user-info">
-                                        <h6>Sardor Allaberganov</h6>
-                                        <p>Designer</p>
-                                        <p>
-                                            Сомнение ментально заполняет сенсибельный смысл жизни. Гегельянство, как следует из вышесказанного, выводит позитивизм. Позитивизм,
-                                            конечно, амбивалентно представляет собой
-                                        </p>
-                                        <div class="tags">
-                                            <button onclick="location.href='#'">Figma</button>
-                                            <button onclick="location.href='#'">Adobe photoshop</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                            </div>
+                        </div>
+                        <div class="mid mt-3">
+                            <h6 class="mt-3">О проекте</h6>
+                            <p class="about-text">Сомнение ментально заполняет сенсибельный смысл жизни. Гегельянство, как следует из вышесказанного, выводит позитивизм. Позитивизм, конечно, амбивалентно представляет собой здравый смысл, не учитывая мнения авторитетов. Антропосоциология трансформирует непредвиденный закон исключённого третьего. Отвечая на вопрос о взаимоотношении идеального ли и материального ци, Дай Чжень заявлял, что врожденная интуиция амбивалентно трансформирует даосизм. Надо сказать, что искусство амбивалентно.</p>
+                            <h6 class="mt-3">Детали проекта</h6>
+                            <p class="about-text">Сомнение ментально заполняет сенсибельный смысл жизни. Гегельянство, как следует из вышесказанного, выводит позитивизм. Позитивизм, конечно, амбивалентно представляет собой здравый смысл, не учитывая мнения авторитетов. Антропосоциология трансформирует непредвиденный закон исключённого третьего. Отвечая на вопрос о взаимоотношении идеального ли и материального ци, Дай Чжень заявлял, что врожденная интуиция амбивалентно трансформирует даосизм. Надо сказать, что искусство амбивалентно.</p>
+                            <h6 class="mt-3">Референсы</h6>
+                            <a href="#">https://claire-murphy.co</a>
+                            <h6 class="mt-3">Навыки</h6>
+                            <div class="tags">
+                                <button onclick="location.href='#'">Figma</button>
+                                <button onclick="location.href='#'">Adobe photoshop</button>
+                            </div>
+                            <h6 class="mt-3">Контакты: <a class="telegram-username" href=""><img src="data/img/telegram.svg" alt=""> @someone</a></h6>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button class="sent-message-btn"><img src="data/img/mail.svg" alt="mail"> Отправить сообщение</button>
+                            <a href="" class="back-btn">Назад</a>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="col-lg-4">

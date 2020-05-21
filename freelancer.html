@@ -55,9 +55,9 @@
                         </div>
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Мои проекты</a>
-                        <a class="dropdown-item" href="#">Настройки</a>
-                        <a class="dropdown-item" href="#">Выход</a>
+                        <a class="dropdown-item" href="myprojects.html">Мои проекты</a>
+                        <a class="dropdown-item" href="settings.html">Настройки</a>
+                        <a class="dropdown-item" href="logout">Выход</a>
                     </div>
                 </li>
             </ul>
@@ -66,8 +66,8 @@
 
     <div class="wrapper">
         <div class="container-fluid">
-            <div class="row mt-5">
-                <div class="col-md-8">
+            <div class="row mt-4">
+                <div class="col-lg-8">
                     <form action="" class="search-form">
                         <input type="text" placeholder="Поиск">
                         <button class="search-btn"><img src="data/img/search.svg" alt=""></button>
@@ -85,54 +85,84 @@
                             <button class="sent-message-btn"><img src="data/img/mail.svg" alt="mail"> Отправить сообщение</button>
                         </div>
                         <div class="mid mt-3">
-                            <h6>О себе</h6>
+                            <h6 class="mt-3">О себе</h6>
                             <p class="about-text">Сомнение ментально заполняет сенсибельный смысл жизни. Гегельянство, как следует из вышесказанного, выводит позитивизм. Позитивизм, конечно, амбивалентно представляет собой здравый смысл, не учитывая мнения авторитетов. Антропосоциология трансформирует непредвиденный закон исключённого третьего. Отвечая на вопрос о взаимоотношении идеального ли и материального ци, Дай Чжень заявлял, что врожденная интуиция амбивалентно трансформирует даосизм. Надо сказать, что искусство амбивалентно.</p>
-                            <h6>Портфолио</h6>
+                            <h6 class="mt-3">Портфолио</h6>
+                            <a href="#">behance.com</a>
+                            <h6 class="mt-3">Навыки</h6>
+                            <div class="tags">
+                                <button onclick="location.href='#'">Figma</button>
+                                <button onclick="location.href='#'">Adobe photoshop</button>
+                            </div>
+                            <h6 class="mt-3">Контакты: <a class="telegram-username" href=""><img src="data/img/telegram.svg" alt=""> @someone</a></h6>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <a href="" class="back-btn">Назад</a>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="announcement">
+                        <div class="overlay"></div>
                         <div class="top-title">
                             <h6><img src="data/img/bell.svg" alt=""> Уведомления</h6>
                             <a href="">Архив</a>
                         </div>
-                        <div>
-                            <p class="mt-4 announcement-date">27 Сентябрь</p>
-                            <div class="d-flex align-items-center justify-content-between mt-3">
+                        <div class="d-flex align-items-center flex-column justify-content-between mt-3">
+                            <div class="d-flex w-100 justify-content-between">
                                 <div class="d-flex">
                                     <img class="announcement-image mr-2" src="data/img/Ellipse.png" alt="">
                                     <div class="announcement-text">
                                         <p>Worklance inc.</p>
-                                        <p>Отправил Вам сообщение</p>
+                                        <p>Отправил Вам сообщение | <span>05/20/2020 04:59</span></p>
                                     </div>
                                 </div>
-                                <a href="" class="read-btn">Прочитать</a>
+                                <button type="button" class="read-btn" data-toggle="collapse" data-target="#message1"><img src="data/img/ChevronDown.svg" alt=""></button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-between mt-3">
+                            <div id="message1" class="collapse">
+                                <p>
+                                    Сомнение ментально заполняет сенсибельный смысл жизни. Гегельянство, как следует из вышесказанного, выводит позитивизм. Позитивизм, конечно, амбивалентно представляет собой здравый смысл, не учитывая мнения авторитетов. Антропосоциология трансформирует непредвиденный закон исключённого третьего.
+                                </p> 
+                                <button class="mark-as-read-btn">Отметить как прочитанное</button>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center flex-column justify-content-between mt-3">
+                            <div class="d-flex w-100 justify-content-between">
                                 <div class="d-flex">
                                     <img class="announcement-image mr-2" src="data/img/Ellipse.png" alt="">
                                     <div class="announcement-text">
                                         <p>Worklance inc.</p>
-                                        <p>Отправил Вам сообщение</p>
+                                        <p>Отправил Вам сообщение | <span>05/20/2020 04:59</span></p>
                                     </div>
                                 </div>
-                                <a href="" class="read-btn">Прочитать</a>
+                                <button type="button" class="read-btn" data-toggle="collapse" data-target="#message2"><img src="data/img/ChevronDown.svg" alt=""></button>
+                            </div>
+                            <div id="message2" class="collapse">
+                                <p>
+                                    Сомнение ментально заполняет сенсибельный смысл жизни. Гегельянство, как следует из вышесказанного, выводит позитивизм. Позитивизм, конечно, амбивалентно представляет собой здравый смысл, не учитывая мнения авторитетов. Антропосоциология трансформирует непредвиденный закон исключённого третьего.
+                                </p> 
+                                <button class="mark-as-read-btn">Отметить как прочитанное</button>
                             </div>
                         </div>
 
-                        <div>
-                            <p class="mt-4 announcement-date">12 Сентябрь</p>
-                            <div class="d-flex align-items-center justify-content-between mt-3">
+                        <div class="d-flex align-items-center flex-column justify-content-between mt-3">
+                            <div class="d-flex w-100 justify-content-between">
                                 <div class="d-flex">
                                     <img class="announcement-image mr-2" src="data/img/Ellipse.png" alt="">
                                     <div class="announcement-text">
                                         <p>Worklance inc.</p>
-                                        <p>Отправил Вам сообщение</p>
+                                        <p>Отправил Вам сообщение | <span>05/20/2020 04:59</span></p>
                                     </div>
                                 </div>
-                                <a href="" class="read-btn">Прочитать</a>
+                                <button type="button" class="read-btn" data-toggle="collapse" data-target="#message3"><img src="data/img/ChevronDown.svg" alt=""></button>
+                            </div>
+                            <div id="message3" class="collapse">
+                                <p>
+                                    Сомнение ментально заполняет сенсибельный смысл жизни. Гегельянство, как следует из вышесказанного, выводит позитивизм. Позитивизм, конечно, амбивалентно представляет собой здравый смысл, не учитывая мнения авторитетов. Антропосоциология трансформирует непредвиденный закон исключённого третьего.
+                                </p> 
+                                <button class="mark-as-read-btn">Отметить как прочитанное</button>
                             </div>
                         </div>
 
