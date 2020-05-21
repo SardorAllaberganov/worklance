@@ -389,6 +389,7 @@ h6.title{
     margin: 18px 0;
     padding: 8px 15px;
     border-radius: 5px;
+    color: #333;
     border: none;
     background: #F0f0f0;
 }
@@ -470,7 +471,7 @@ h6.title{
     color: #333;
 }
 
-.input-group{
+.my-input-group{
     position: relative;
     button{
         position: absolute;
@@ -480,5 +481,29 @@ h6.title{
         outline: none;
         top: 50%;
         transform: translateY(-50%)
+    }
+}
+
+.login{
+    height: 100vh;
+    .title{
+        font-family: "opensans-bold";
+        color: #333;
+        margin-bottom: 30px;
+    }
+    .inner-blocks{
+        padding: 30px;
+    }
+    .forgot-password{
+        color: #777;
+        font-size: 16px;
+        &:hover{
+            color: darken($color: #777, $amount: 30%);
+        }
+    }
+    p{
+        margin-top: 30px;
+        font-size: 14px;
+        color: #777;
     }
 }

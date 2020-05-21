@@ -457,6 +457,7 @@ h6.title {
   margin: 18px 0;
   padding: 8px 15px;
   border-radius: 5px;
+  color: #333;
   border: none;
   background: #F0f0f0;
 }
@@ -553,11 +554,11 @@ h6.title {
   color: #333;
 }
 
-.input-group {
+.my-input-group {
   position: relative;
 }
 
-.input-group button {
+.my-input-group button {
   position: absolute;
   right: 10px;
   background: none;
@@ -566,5 +567,34 @@ h6.title {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.login {
+  height: 100vh;
+}
+
+.login .title {
+  font-family: "opensans-bold";
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.login .inner-blocks {
+  padding: 30px;
+}
+
+.login .forgot-password {
+  color: #777;
+  font-size: 16px;
+}
+
+.login .forgot-password:hover {
+  color: #2b2b2b;
+}
+
+.login p {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777;
 }
 /*# sourceMappingURL=style.css.map */
