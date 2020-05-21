@@ -402,7 +402,7 @@ html, body {
 .back-btn {
   background: #EEEEEE;
   font-size: 14px;
-  padding: 5px 15px;
+  padding: 8px 15px;
   border-radius: 2px;
   margin-top: 10px;
   color: #777;
@@ -419,7 +419,7 @@ html, body {
 .active-btn {
   background: #1BC47D;
   font-size: 14px;
-  padding: 5px 15px;
+  padding: 8px 15px;
   border-radius: 2px;
   margin-top: 10px;
   color: #fff;
@@ -433,8 +433,19 @@ html, body {
   background: #159760;
 }
 
-.addproject h6 {
-  font-size: 16px;
+.delete-btn {
+  background: #E72727;
+  margin: 20px 0;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-family: "opensans-semibold";
+}
+
+h6.title {
+  font-size: 24px;
   font-family: "opensans-bold";
   color: #333;
   margin-bottom: 30px;
@@ -445,7 +456,7 @@ html, body {
   display: block;
   margin: 18px 0;
   padding: 8px 15px;
-  border-radius: 2px;
+  border-radius: 5px;
   border: none;
   background: #F0f0f0;
 }
@@ -473,5 +484,87 @@ html, body {
 
 .bootstrap-select > .dropdown-toggle.bs-placeholder {
   color: #777;
+}
+
+.inner-blocks {
+  -webkit-box-shadow: 0 5px 10px #E5E5E5;
+          box-shadow: 0 5px 10px #E5E5E5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.inner-blocks img {
+  margin-bottom: 4px;
+}
+
+.inner-blocks h6 {
+  font-size: 14px;
+  margin: 0;
+  font-family: "opensans-bold";
+  color: #333;
+}
+
+.inner-blocks .user-image {
+  margin: 20px 0;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.inner-blocks #userimage {
+  display: none;
+}
+
+.inner-blocks .user-image-block {
+  position: relative;
+}
+
+.inner-blocks .user-image-block:hover .userimage-label {
+  display: block;
+}
+
+.inner-blocks .userimage-label {
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+
+.inner-blocks .userimage-label img {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.modal-title {
+  font-size: 16px;
+  font-family: "opensans-bold";
+  color: #333;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 /*# sourceMappingURL=style.css.map */
