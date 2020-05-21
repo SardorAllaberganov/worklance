@@ -458,8 +458,24 @@ h6.title {
   padding: 8px 15px;
   border-radius: 5px;
   color: #333;
+  outline: none;
   border: none;
   background: #F0f0f0;
+}
+
+.select-input {
+  width: 100% !important;
+  display: block;
+  margin: 18px 0;
+  border-radius: 5px;
+  color: #333;
+  outline: none;
+  border: none;
+  background: #F0f0f0;
+}
+
+.select-input .btn {
+  padding: 8px 15px;
 }
 
 .bootstrap-select .dropdown-toggle:focus {
@@ -479,12 +495,16 @@ h6.title {
   border: none;
 }
 
-.multiselect1 .btn {
-  padding: unset;
-}
-
 .bootstrap-select > .dropdown-toggle.bs-placeholder {
   color: #777;
+}
+
+.bootstrap-select:not(.input-group-btn) {
+  display: block;
+}
+
+.dropup .dropdown-toggle::after, .dropdown-toggle::after {
+  display: none;
 }
 
 .inner-blocks {
@@ -511,6 +531,7 @@ h6.title {
   height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 1px solid #ccc;
   border-radius: 50%;
 }
 

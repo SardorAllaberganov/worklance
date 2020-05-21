@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Worklance</title>
+    <link rel="shortcut icon" href="data/img/favicon.png" type="image/png">
+    <!-- <link rel="stylesheet" href="data/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="data/css/style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+    <script type="text/javascript" src="data/js/index.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row login align-items-center justify-content-center">
+            <div class="col-md-6 col-lg-5 col-sm-8">
+                <div class="text-center my-4">
+                    <img src="data/img/WorklanceFullLogo.svg" alt="">
+                </div>
+                <div class="inner-blocks">
+                    <h5 class="title">Анкета</h5>
+                    <form action="">
+                        <div class="text-center user-image-block">
+                            <img src="data/img/no-image.webp" class="user-image" alt="">
+                            <input type="file" name="" id="userimage">
+                            <label for="userimage" class="userimage-label">
+                                <img src="data/img/camera.svg" alt="">
+                            </label>
+                        </div>
+                        <select name="" class="input-style" id="">
+                            <option value="" hidden selected>Выберите свой стек</option>
+                            <option value="">Design</option>
+                            <option value="">Front-end Dev</option>
+                            <option value="">Back-end Dev</option>
+                        </select>
+                        <input type="text" class="input-style" placeholder="Имя пользователя в Telegram">
+                        <select class="selectpicker multiselect1 select-input" multiple data-live-search="true">
+                            <option>Figma</option>
+                            <option>ReactJS</option>
+                            <option>VueJS</option>
+                            <option>Laravel</option>
+                        </select>
+
+                        <textarea name="" id="" cols="30" rows="7" class="input-style" placeholder="Напишите немного о себе, укажите образование, род деятельности, перечислите виды услуг…"></textarea>
+
+                        <div class="text-right">
+                            <button class="back-btn">Сохранить</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
