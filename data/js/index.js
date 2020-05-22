@@ -15,6 +15,6 @@ $(document).ready(function () {
             $(this).children().attr("src", "data/img/eye.svg");
         }
     });
-
-
 });
+
+

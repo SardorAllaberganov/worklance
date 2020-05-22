@@ -10,16 +10,15 @@
     <!-- <link rel="stylesheet" href="data/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="data/css/widgEditor.css">
     <link rel="stylesheet" href="data/css/style.css">
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-    <script src="data/js/widgEditor.js"></script>
+    <script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+    <script src="data/js/sample.js"></script>
     <script type="text/javascript" src="data/js/index.js"></script>
 </head>
 
@@ -78,7 +77,10 @@
                     <form action="" autocomplete="on">
                         <input class="input-style" type="text" placeholder="Название проекта">
 
-                        <textarea class="widgEditor" id="noise" name="noise" cols="30" rows="7" placeholder="Детали проекта"></textarea>
+
+                        <div id="editor">
+                            <h3>Детали проекта</h3>
+                        </div>
                         
                         <input class="input-style" type="text" placeholder="Референсы">
                         <select class="selectpicker select-input multiselect1" multiple data-live-search="true">
@@ -98,7 +100,9 @@
         </div>
     </div>
 
-
+    <script>
+        initSample();
+    </script>
 
 
     </body>
