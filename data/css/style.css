@@ -285,7 +285,7 @@ html, body {
 }
 
 .wrapper .announcement p {
-  margin: 0;
+  margin: 20px 0;
 }
 
 .wrapper .announcement-text p {
@@ -339,6 +339,8 @@ html, body {
   border-radius: 5px;
   margin: 20px 0 20px;
   padding: 30px;
+  -webkit-box-shadow: 0 5px 10px #E5E5E5;
+          box-shadow: 0 5px 10px #E5E5E5;
 }
 
 .freelancer .sent-message-btn {

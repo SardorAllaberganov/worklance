@@ -10,6 +10,7 @@
     <!-- <link rel="stylesheet" href="data/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="data/css/widgEditor.css">
     <link rel="stylesheet" href="data/css/style.css">
 
     
@@ -18,7 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-    
+    <script src="data/js/widgEditor.js"></script>
     <script type="text/javascript" src="data/js/index.js"></script>
 </head>
 
@@ -76,8 +77,9 @@
                     <h6 class="title">Добавить проект</h6>
                     <form action="" autocomplete="on">
                         <input class="input-style" type="text" placeholder="Название проекта">
-                        <textarea class="input-style" name="" id="" cols="30" rows="7" placeholder="О проекте"></textarea>
-                        <textarea class="input-style" name="" id="" cols="30" rows="7" placeholder="Детали проекта"></textarea>
+
+                        <textarea class="widgEditor" id="noise" name="noise" cols="30" rows="7" placeholder="Детали проекта"></textarea>
+                        
                         <input class="input-style" type="text" placeholder="Референсы">
                         <select class="selectpicker select-input multiselect1" multiple data-live-search="true">
                             <option>Figma</option>

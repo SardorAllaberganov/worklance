@@ -233,7 +233,7 @@ html,body{
             border-radius: 50%;
         }
         p{
-            margin: 0;
+            margin: 20px 0;
         }
         &-text{
             p{
@@ -283,6 +283,7 @@ html,body{
     border-radius: 5px;
     margin: 20px 0 20px;
     padding: 30px;
+    box-shadow: 0 5px 10px #E5E5E5;
     .sent-message-btn{
         padding: 5px 20px;
         font-size: 14px;
