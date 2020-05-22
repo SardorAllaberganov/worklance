@@ -21,17 +21,13 @@ var initSample = ( function() {
 	return function() {
 		var editorElement = CKEDITOR.document.getById( 'editor' );
 
-		// :(((
-		if ( isBBCodeBuiltIn ) {
-			editorElement.setHtml(
-				'Hello world!\n\n' +
-				'I\'m an instance of [url=https://ckeditor.com]CKEditor[/url].'
-			);
-		}
+	
 
 		// Depending on the wysiwygarea plugin availability initialize classic or inline editor.
 		if ( wysiwygareaAvailable ) {
-			CKEDITOR.replace( 'editor' );
+			CKEDITOR.replace( 'editor',{
+				customConfig: '/data/js/config.js'
+			} );
 		} else {
 			editorElement.setAttribute( 'contenteditable', 'true' );
 			CKEDITOR.inline( 'editor' );
