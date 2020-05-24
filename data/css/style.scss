@@ -342,9 +342,10 @@ html,body{
     background: #EEEEEE;
     font-size: 14px;
     padding: 8px 15px;
+    text-align: center;
     border-radius: 2px;
     margin-top: 10px;
-    color: #777;
+    color: #777!important;
     height: max-content;
     border: none;
     &:hover{
@@ -526,5 +527,31 @@ h6.title{
         margin-top: 30px;
         font-size: 14px;
         color: #777;
+    }
+}
+
+@media only screen and (min-width: 1366px){
+    .freelancer .mid .about-text,.wrapper .announcement-text p,.wrapper .w-list li a p,
+    .freelancer .top .user-info p,.freelancer .sent-message-btn{
+        font-size: 16px;
+    }
+    .freelancer .mid h6,.wrapper .announcement-text p:first-child,.wrapper .w-list li a h6{
+        font-size: 18px;
+    }
+    .wrapper .announcement-image{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .wrapper{
+        padding: 0 10px;
+    }
+    .navbar{
+        padding: 5px 15px;
+    }
+    .wrapper .w-list li a p{
+        font-size: 16px;
     }
 }
