@@ -53,6 +53,9 @@ html, body {
   color: #fff;
   -webkit-transition: all .2s;
   transition: all .2s;
+  height: -webkit-max-content !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
 }
 
 .navbar .add-project-btn:hover {
@@ -409,9 +412,9 @@ html, body {
   border-radius: 2px;
   margin-top: 10px;
   color: #777 !important;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: -webkit-max-content !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
   border: none;
 }
 
@@ -427,9 +430,9 @@ html, body {
   margin-top: 10px;
   color: #fff;
   border: none;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: -webkit-max-content !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
 }
 
 .active-btn:hover {
@@ -445,6 +448,10 @@ html, body {
   border: none;
   color: #fff;
   font-family: "opensans-semibold";
+}
+
+.delete-btn:hover {
+  background: #c51616;
 }
 
 h6.title {

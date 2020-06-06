@@ -98,7 +98,7 @@
                             </select>
                             <input type="text" class="input-style" placeholder="Имя пользователя в Telegram">
                             <div class="text-right">
-                                <button class="back-btn">Сохранить</button>
+                                <button class="save-btn back-btn">Сохранить</button>
                             </div>
                         </form>
                     </div>
@@ -127,7 +127,7 @@
                             </div>
                             
                             <div class="text-right">
-                                <button class="back-btn">Сохранить</button>
+                                <button class="save-btn back-btn">Сохранить</button>
                             </div>
                         </form>
                     </div>
@@ -148,7 +148,7 @@
                             
                             <textarea name="" id="" cols="30" rows="5" class="input-style" placeholder="О себе"></textarea>
                             <div class="text-right">
-                                <button class="active-btn">Сохранить</button>
+                                <button class="save-btn back-btn">Сохранить</button>
                             </div>
                         </form>
                     </div>
@@ -170,7 +170,7 @@
                     <div class="modal-body">
                         <h6>Чтобы удалить аккаунт, введите пароль.</h6>
                         <div class="my-input-group">
-                            <input type="password" placeholder="Пароль" class="input-style"> 
+                            <input type="password" id="delete-input" placeholder="Пароль" class="input-style"> 
                             <button type="button" class="show-password"><img width="17" src="data/img/eye.svg" alt=""></button>
                         </div>
 
@@ -178,7 +178,7 @@
 
                     <div class="modal-footer">
                         <button type="button" class="btn" data-dismiss="modal">Закрыть</button>
-                        <button class="btn btn-danger" data-dismiss="modal">Удалить</button>
+                        <button class="btn btn-danger modal-delete-btn" data-dismiss="modal">Удалить</button>
                     </div>
                 </form>
             </div>
